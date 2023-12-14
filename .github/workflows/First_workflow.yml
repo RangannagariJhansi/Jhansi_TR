@@ -6,7 +6,7 @@ jobs:
   first-job: 
     runs-on: ubuntu-latest
     steps:
-      -name: first-job
-       run: echo “jhanu”
-      -name: print hello
-       run: echo”bye”
+      - name: first-job
+        run: echo”hi”
+      - name: print hello
+        run: echo”bye”
