@@ -1,0 +1,29 @@
+name: Download Artifact from JFrog Artifactory
+ 
+on:
+
+  push:
+
+    branches: [ main ]
+ 
+jobs:
+
+  download-artifact:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: jfrog/artifactory-action@v2
+
+        with:
+
+          url: https://tr1.jfrog.io/artifactory/npm/tr-digital/triva-chatbot//triva-chatbot
+
+          token: ${{ secrets.NPM_TOKEN }}  # Use the token secret
+
+          repo: triva-chatbot
+
+          path: npm/tr-digital/triva-chatbot/
+
+          failOn404: true
