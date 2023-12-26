@@ -18,7 +18,7 @@ jobs:
 
         with:
 
-          url: https://tr1.jfrog.io/artifactory/npm/tr-digital/triva-chatbot//triva-chatbot
+          url: https://tr1.jfrog.io/artifactory/npm/tr-digital/triva-chatbot/
 
           token: ${{ secrets.NPM_TOKEN }}  # Use the token secret
 
